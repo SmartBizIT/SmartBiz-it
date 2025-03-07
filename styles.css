@@ -1,0 +1,301 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f4f4f9; /* Fallback background color */
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Header Styles */
+header {
+  background-color: #003366;
+  color: #fff;
+  padding: 1rem 0;
+}
+
+header .container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.logo img {
+  width: auto;
+  height: 120px;
+  max-width: 250px;
+  object-fit: contain;
+}
+
+.logo {
+  flex-grow: 0;
+  margin-right: auto;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+  color: #7a9937;
+}
+
+/* Hero Section */
+.hero-section {
+  position: relative;
+  background: url('hero_section_bg.jpg') no-repeat center center;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(28, 28, 28, 0.6);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  padding: 20px;
+}
+
+.hero-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: black; /* Black color for "with IT Solutions" */
+}
+
+/* Typed Text Styles */
+.typed-text {
+  color: #00FFFF; /* Vibrant cyan color */
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Soft shadow for contrast */
+  transition: color 0.5s ease-in-out;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.cta-btn {
+  display: inline-block;
+  background-color: #7a9937;
+  color: #fff;
+  padding: 0.8rem 1.5rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.cta-btn:hover {
+  background-color: #0099cc;
+}
+
+/* About Section Styles */
+.about-section {
+  background-color: #000; /* Black background for contrast */
+  color: #fff;            /* White text color */
+  padding: 4rem 1rem;
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap; /* Ensure responsiveness */
+}
+
+/* Text Styling */
+.about-text {
+  flex: 1.2; /* Slightly more space for text */
+  max-width: 600px;
+  text-align: left;
+  line-height: 1.8;
+  font-size: 1rem;
+}
+
+.about-text h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #7a9937; /* Green accent to match the logo */
+}
+
+.about-text ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin: 1rem 0;
+}
+
+.about-text li {
+  margin-bottom: 0.5rem;
+}
+
+/* Logo Styling */
+.about-logo {
+  flex: 0.8; /* Allocate more space to the logo */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.about-logo img {
+  max-width: 100%;      /* Use full available space */
+  height: auto;         /* Maintain aspect ratio */
+  max-height: 300px;    /* Increase logo height */
+  object-fit: contain;  /* Ensure proper scaling */
+  transition: transform 0.3s ease;
+}
+
+/* Hover Effect */
+.about-logo img:hover {
+  transform: scale(1.05); /* Slight zoom effect */
+}
+
+/* Services Section */
+.services-section {
+  padding: 4rem 1rem;
+  text-align: center;
+}
+
+.services-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.services-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.service-card {
+  background-color: #fff;
+  border: 2px solid #7a9937;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  max-width: 300px;
+  text-align: left;
+}
+
+.service-card h3 {
+  color: #003366;
+  margin-bottom: 1rem;
+}
+
+.service-card p {
+  font-size: 1rem;
+}
+
+/* Contact Section */
+.contact-section {
+  padding: 4rem 1rem;
+  text-align: center;
+}
+
+.contact-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+form {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+form input,
+form textarea,
+form button {
+  padding: 1rem;
+  font-size: 1rem;
+  border: 1px solid #7a9937;
+  border-radius: 5px;
+}
+
+form button {
+  background-color: #0099cc;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #7a9937;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #003366;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+footer .container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-container {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .about-text, .about-logo {
+      max-width: 100%;
+  }
+
+  .about-logo {
+      justify-content: center;
+      margin: 20px 0;
+  }
+
+  .about-logo img {
+      max-width: 300px;
+      max-height: 200px;
+  }
+}
